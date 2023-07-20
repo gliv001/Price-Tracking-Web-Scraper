@@ -5,7 +5,7 @@ import os
 from amazon import get_product as get_amazon_product
 from requests import post
 
-AMAZON = "https://amazon.ca"
+AMAZON = "https://www.amazon.com"
 
 URLS = {
     AMAZON: {
@@ -120,4 +120,4 @@ async def main(url, search_text, response_route):
 
 if __name__ == "__main__":
     # test script
-    asyncio.run(main(AMAZON, "ryzen 9 3950x"))
+    asyncio.run(main(AMAZON, "ryzen 9 3950x", "/results"))
